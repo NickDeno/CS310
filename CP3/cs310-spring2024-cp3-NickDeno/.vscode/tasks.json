@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build cp2_songs",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "cp2_songs.cpp",
+                "PlaylistCollection.cpp",
+                "Playlist.cpp",
+                "Song.cpp",
+                "-o",
+                "cp2_songs",
+                "-g"
+            ],
+            "group": "build",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "problemMatcher": []
+        }
+    ]
+}
